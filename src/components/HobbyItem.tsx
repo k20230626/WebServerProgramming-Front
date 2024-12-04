@@ -18,7 +18,7 @@ export const HobbyItem = (props : HobbyItemProps  ) => {
                     <p className="pl-2 text-md flex-1 text-start">{props.content}</p>
                 </div>
             </div>
-
+            <div className="hobby-item-background absolute"/>
             <img className="absolute object-fill w-full z-[-1]" src={props.image} alt="hobby image"/>
         </div>
     )
