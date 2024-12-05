@@ -11,12 +11,12 @@ const Home = () => {
 
             let newHobbyItems: HobbyItemProps[] = [{
                 title: "프로그래밍",
-                content: "으아아아아",
+                content: "어쩌구 저쩌구",
                 image: "https://assets.entrepreneur.com/content/3x2/2000/how-read-website-source-code.jpg",
                 url: "http://localhost:8080"
             }, {
                 title: "애니메이션",
-                content: "",
+                content: "애니메이숀",
                 image: "https://image.aladin.co.kr/product/21011/12/cover500/e502536774_1.jpg",
                 url: "http://localhost:8080"
             }, {
