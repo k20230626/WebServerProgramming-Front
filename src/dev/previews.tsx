@@ -15,7 +15,7 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/HobbyItem">
                 <HobbyItem title="프로그래밍" content="ㅁ나넘이ㅏ"
-                           image="https://t4.ftcdn.net/jpg/03/05/23/35/360_F_305233591_U7DvegTtiIoP2CWNUpR5qxrFvqpjpYW9.jpg"
+                           image="https://assets.entrepreneur.com/content/3x2/2000/how-read-website-source-code.jpg"
                            url="njoys.me"/>
             </ComponentPreview>
         </Previews>

@@ -12,7 +12,7 @@ const Home = () => {
             let newHobbyItems: HobbyItemProps[] = [{
                 title: "프로그래밍",
                 content: "으아아아아",
-                image: "https://t4.ftcdn.net/jpg/03/05/23/35/360_F_305233591_U7DvegTtiIoP2CWNUpR5qxrFvqpjpYW9.jpg",
+                image: "https://assets.entrepreneur.com/content/3x2/2000/how-read-website-source-code.jpg",
                 url: "http://localhost:8080"
             }, {
                 title: "애니메이션",
@@ -21,7 +21,7 @@ const Home = () => {
                 url: "http://localhost:8080"
             }, {
                 title: "만화",
-                content: "",
+                content: "ㅏ다다다 다컴너트 ",
                 image: "https://pbs.twimg.com/media/FNJVvXuakAcc-4t.jpg",
                 url: "http://localhost:8080"
             }]
@@ -36,18 +36,19 @@ const Home = () => {
 
 
     return (
-        <>
+        <main className="main-background">
             <Navbar/>
-            <div className="container mx-auto mt-[50px]">
-                <h1 className="text-4xl text-center mt-10">나의 취미는?</h1>
-                <p className="text-center mt-5">
+            <div className="container mx-auto pt-[50px]">
+                <h1 className="text-4xl text-center mt-2 font-bold">나의 취미는?</h1>
+                <p className="text-center my-5">
                     마우스를 호버하여 확인해 보세요!
                 </p>
                 <div className="flex flex-col space-y-4">
-                    {hobbies.map((props, index) => <HobbyItem key={index} {...props} />)}
+                    {hobbies.map((props, index) => <HobbyItem key={index} {...props}/>)}
                 </div>
             </div>
-        </>
+            <div className="main-background-blur"/>
+        </main>
     )
 };
 
