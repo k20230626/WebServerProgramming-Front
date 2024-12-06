@@ -10,20 +10,26 @@ html, body, main {
     font-family: 'NanumSquareRound', serif;
 }
 
+
+:root {
+    --var-screen-width: 100vw;
+    --var-screen-height: 100vh;
+}
 .main-background-active {
 }
 
+
 .main-background {
     transition: opacity ease 0.5s;
-    height: 100vh;
-    width: 100vw;
+    height: var(--var-screen-height);
+    width: var(--var-screen-width);
     background-size: cover;
     z-index: 1;
     position: relative;
 }
 .main-background-blur {
-    height: 100vh;
-    width: 100vw;
+    height: var(--var-screen-height);
+    width: var(--var-screen-width);
     backdrop-filter: blur(20px);
     background-color: transparent;
     position: absolute;

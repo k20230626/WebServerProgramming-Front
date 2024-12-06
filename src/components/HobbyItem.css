@@ -30,6 +30,9 @@
             opacity: 0.5;
         }
 
+        .main-background-image {
+            opacity: 1;
+        }
     }
 }
 

@@ -18,12 +18,17 @@ const Home = () => {
                 title: "애니메이션",
                 content: "애니메이숀",
                 image: "https://image.aladin.co.kr/product/21011/12/cover500/e502536774_1.jpg",
-                url: "http://localhost:8080"
+                url: "https://laftel.net/item/39985"
             }, {
                 title: "만화",
                 content: "ㅏ다다다 다컴너트 ",
                 image: "https://pbs.twimg.com/media/FNJVvXuakAcc-4t.jpg",
                 url: "http://localhost:8080"
+            }, {
+                title: "메이플스토리",
+                content: "ㅏ다다다 다컴너트 ",
+                image: "https://i.namu.wiki/i/NUzo8Y8CQrxIjuZF9SlDK1ciyYMegj3PRFRi4x6qd6ll4C-jY3BEk4sPPACnrYCwWvbIZDYM49XSqT6gkBaNmg.webp",
+                url: "https://maplestory.nexon.com"
             }]
 
             newHobbyItems.map((x) => {
@@ -48,6 +53,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="main-background-blur"/>
+            <img className="absolute main-background-image" />
         </main>
     )
 };

@@ -31,21 +31,22 @@ export const HobbyItem = (props : HobbyItemProps  ) => {
 const openExternalLink = (url :string) => {
     window.open(url)
 }
+
 const changeBackground = (img: string) => {
-    const mainElement = document.querySelector("main")
-    if(!mainElement)
+    const imgElement = document.querySelector("main") as HTMLImageElement
+    if(!imgElement)
         return
 
-    mainElement.style.backgroundImage = `url(${img})`
-    mainElement.classList.add(main_class_name)
+    imgElement.style.backgroundImage = `url(${img})`
+
+    imgElement.classList.add(main_class_name)
 
 }
 const nullBackground = () => {
-    const mainElement = document.querySelector("main")
-    if(!mainElement)
+    const imgElement = document.querySelector("main") as HTMLImageElement
+    if(!imgElement)
         return
 
-    mainElement.style.backgroundImage = ''
-    mainElement.classList.remove(main_class_name)
+    imgElement.classList.remove(main_class_name)
 
 }
