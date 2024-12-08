@@ -2,7 +2,7 @@ import "./HobbyItem.css"
 
 export type HobbyItemProps = {
     title: string;
-    content: string;
+    content: JSX.Element;
     url: string;
     image: string
 }
@@ -18,7 +18,9 @@ export const HobbyItem = (props : HobbyItemProps  ) => {
                 <p className="text-2xl font-bold hobby-item-title">{props.title}</p>
                 <div className="hobby-item-content-container divide-x">
                     <div aria-hidden="true"/>
-                    <p className="pl-2 text-md flex-1 text-start">{props.content}</p>
+                    <p className="pl-2 text-md flex-1 text-start text-wrap">
+                        {props.content}
+                    </p>
                 </div>
             </div>
             <div className="hobby-item-background absolute"/>
