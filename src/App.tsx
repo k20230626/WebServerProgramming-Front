@@ -1,5 +1,5 @@
 import {HobbyItem, HobbyItemProps} from "./components/HobbyItem.tsx";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 import "./index.css"
 
