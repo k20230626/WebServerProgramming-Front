@@ -6,7 +6,7 @@ import "./index.css"
 const Home = () => {
     const [hobbies, setHobbies] = useState<HobbyItemProps[]>([]);
     useEffect(() => {
-
+        setHobbies([])
         axios.get(`${import.meta.env.VITE_API_URL}/api/hobby/`).then((res) => {
             if (res.status !== 200)
                 return
