@@ -1,10 +1,12 @@
 import {HobbyItem, HobbyItemProps} from "./components/HobbyItem.tsx";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import axios from "axios";
 import "./index.css"
+import {BackgroundImageContext} from "./main.tsx";
 
 const Home = () => {
     const [hobbies, setHobbies] = useState<HobbyItemProps[]>([]);
+    const { background } = useContext(BackgroundImageContext)!;
     useEffect(() => {
         setHobbies([])
         axios.get(`${import.meta.env.VITE_API_URL}/api/hobby`).then((res) => {
@@ -37,8 +39,7 @@ const Home = () => {
                 </div> : <p className="text-center">로딩중...</p>}
             </div>
 
-
-            <img className="main-background-blur main-background-image" alt={''}/>
+            <img className="main-background-blur main-background-image" src={background} alt={''}/>
         </main>
     )
 };
